@@ -2,11 +2,12 @@
   "name": "newcrunch",
   "version": "0.0.1",
   "dependencies": {
-    "restify": "~3.0.3"
+    "restify": "~3.0.3",
+    "bower": "~1.4.1"
   },
   "scripts": {
     "start": "gulp serve",
-    "postinstall": "bower install"
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",

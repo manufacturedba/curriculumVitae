@@ -1,0 +1,1 @@
+!function(e){"use strict";var o=e.querySelector("#app");o.name="Roberto Rodriguez",o.addEventListener("template-bound",function(){console.log("Rock and roll")}),window.addEventListener("WebComponentsReady",function(){e.querySelector("body").removeAttribute("unresolved"),o.route="about";e.querySelector("#drawer")})}(wrap(document));

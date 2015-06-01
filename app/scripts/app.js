@@ -15,4 +15,6 @@
         var drawer = document.querySelector('#drawer');
     });
 
-})(wrap(document));
+})(document);
+
+//(wrap(document));

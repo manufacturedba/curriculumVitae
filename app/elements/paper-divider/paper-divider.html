@@ -1,0 +1,28 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-styles/paper-styles-classes.html">
+
+<dom-module id="paper-divider">
+    <style>
+        :host hr {
+            width: calc(100% + 16px);
+            border: none;
+            height: 1px;
+            position: relative;
+            background-color: #000;
+            opacity: var(--light-divider-opacity);
+            display: block;
+            left: -16px;
+        }
+    </style>
+    <template>
+        <hr />
+    </template>
+</dom-module>
+
+<script>
+(function(){
+    Polymer({
+        is: 'paper-divider'
+    });
+})()
+</script>

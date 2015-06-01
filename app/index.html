@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curriculum Vitae</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+  <!-- endbuild -->
+
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endreplace-->
+</head>
+
+<body unresolved class="fullbleed layout vertical">
+    <template is="dom-bind" id="app">
+        <paper-drawer-panel id="drawer">
+            <paper-header-panel drawer class="bg">
+                <paper-toolbar id="drawerToolbar">
+                    <div title>Sections</div>
+                </paper-toolbar>
+                <paper-menu attr-for-selected="data-route" selected="{{route}}" >
+                    <a href="#" data-route="about" paper-drawer-toggle>
+                        <iron-icon icon="social:person"></iron-icon>
+                        <span class="paper-font-menu">About</span>
+                    </a>
+                    <a href="#" data-route="work" paper-drawer-toggle>
+                        <iron-icon icon="work"></iron-icon>
+                        <span class="paper-font-menu">Work</span>
+                    </a>
+                    <a href="#" data-route="skills" paper-drawer-toggle>
+                        <iron-icon icon="maps:layers"></iron-icon>
+                        <span class="paper-font-menu">Skills</span>
+                    </a>
+                    <a href="#" data-route="education" paper-drawer-toggle>
+                        <iron-icon icon="social:school"></iron-icon>
+                        <span class="paper-font-menu">Education & Certifications</span>
+                    </a>
+                </paper-menu>
+            </paper-header-panel>
+            <paper-header-panel main mode="waterfall">
+                <paper-toolbar id="mainToolbar">
+                    <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+                    <div class="paper-font-display2">{{name}}</div>
+                </paper-toolbar>
+
+                <iron-pages attr-for-selected="data-route" selected="{{route}}">
+                    <section data-route="work">
+                        <paper-material elevation="1" class="layout vertical fullbleed">
+                            <paper-item>
+                                <paper-item-body>
+                                    <h3 class="paper-font-subhead">
+                                        <span>Programmer Analyst</span>
+                                        <span>Command Alkon</span>
+                                        <div class="paper-font-caption" secondary>January 2014 -</div>
+                                    </h3>
+                                    <div class="paper-font-body1">Responsible for developing, maintaining,
+                                        and deploying mobile applications.
+                                    </div>
+                                </paper-item-body>
+                            </paper-item>
+                            <paper-divider></paper-divider>
+                            <paper-item>
+                                <paper-item-body>
+                                    <h3 class="paper-font-subhead">
+                                        <span>Phone Technician</span>
+                                        <span>Phone Restore</span>
+                                        <div class="paper-font-caption" secondary>May
+                                            2011 - August 2013</div>
+                                    </h3>
+                                    <div class="paper-font-body1">Phone repair,
+                                        troubleshooting, and customer assistance.
+                                        Developed first company website.
+                                    </div>
+                                </paper-item-body>
+                            </paper-item>
+                        </paper-material>
+                    </section>
+
+                    <section data-route="about">
+                        <paper-material elevation="1">
+                            <paper-item>
+                                <iron-icon icon="assignment-ind"></iron-icon>
+                                <paper-item-body>
+                                    <iron-icon icon="placeholder"></iron-icon>
+                                    <span>Front End Web Developer</span>
+                                </paper-item-body>
+                            </paper-item>
+                            <paper-divider></paper-divider>
+                            <paper-item>
+                                <iron-icon icon="mail"></iron-icon>
+                                <paper-item-body>
+                                    <div>
+                                        <iron-icon icon="placeholder"></iron-icon>
+                                        <a class="menu-link" href="mailto:roberto@thinkcrunch.com">roberto@thinkcrunch.com</a>
+                                    </div>
+                                    <div>
+                                        <iron-icon icon="placeholder"></iron-icon>
+                                        <a class="menu-link" href="mailto:rrodriguez@commandalkon.com">rrodriguez@commandalkon.com</a>
+                                    </div>
+                                </paper-item-body>
+                            </paper-item>
+                            <paper-divider></paper-divider>
+                            <paper-item>
+                                <iron-icon icon="communication:phone"></iron-icon>
+                                <paper-item-body>
+                                    <iron-icon icon="placeholder"></iron-icon>
+                                    <a class="menu-link" href="tel:2054478130">(205) 447-8130</a>
+                                </paper-item-body>
+                            </paper-item>
+                            <paper-divider></paper-divider>
+                            <paper-item>
+                                <iron-icon icon="language"></iron-icon>
+                                <paper-item-body>
+                                    <iron-icon icon="placeholder"></iron-icon>
+                                    <a class="menu-link" href="//thinkcrunch.com">thinkcrunch.com</a>
+                                </paper-item-body>
+                            </paper-item>
+                            <paper-divider></paper-divider>
+                            <paper-item>
+                                <iron-icon icon="maps:pin-drop"></iron-icon>
+                                <paper-item-body>
+                                    <iron-icon icon="placeholder"></iron-icon>
+                                    <span>Birmingham, AL</span>
+                                </paper-item-body>
+                            </paper-item>
+                            <paper-divider></paper-divider>
+                            <paper-item>
+                                <paper-item-body class="layout">
+                                    <span>Made with </span>
+                                    <iron-icon class="accent" icon="favorite"></iron-icon>
+                                    <span> and </span>
+                                    <a href="https://www.polymer-project.org"><iron-icon class="accent" icon="polymer"></iron-icon></a>
+                                </paper-item-body>
+                            </paper-item>
+                        </paper-material>
+                    </section>
+
+                    <section data-route="skills">
+
+                        <paper-material>
+                            <h3 class="paper-font-display1 secondary">Languages</h3>
+                            <paper-item>
+                                <paper-item-body>
+                                    <div class="paper-font-subhead">JavaScript</div>
+                                    <div class="paper-font-caption" secondary>
+                                        <div>Node Bower Grunt Angular
+                                        Mocha Karma Protractor Jade</div>
+                                    </div>
+                                </paper-item-body>
+                            </paper-item>
+                            <paper-item>
+                                <paper-item-body>
+                                    <div class="paper-font-subhead">Python</div>
+                                    <div class="paper-font-caption" secondary>Django</div>
+                                </paper-item-body>
+                            </paper-item>
+                            <paper-divider></paper-divider>
+                            <h3 class="paper-font-display1 secondary">Platforms</h3>
+                            <div>
+                                <paper-item>
+                                    <paper-item-body>
+                                        <div class="paper-font-subhead">Linux</div>
+                                        <div class="paper-font-caption" secondary>Ubuntu, CrunchBang</div>
+                                    </paper-item-body>
+                                </paper-item>
+                                <paper-item>
+                                    <paper-item-body>
+                                        <div class="paper-font-subhead">Amazon Web Services</div>
+                                        <div class="paper-font-caption" secondary>EC2, S3</div>
+                                    </paper-item-body>
+                                </paper-item>
+                                <paper-item>
+                                    <paper-item-body>
+                                        <div class="paper-font-subhead">Heroku</div>
+                                    </paper-item-body>
+                                </paper-item>
+                            </div>
+                            <paper-divider></paper-divider>
+                            <h3 class="paper-font-display1 secondary">Other</h3>
+                            <paper-item>
+                                <paper-item-body class="paper-font-subhead">
+                                    <div>MongoDB</div>
+                                    <div>PostgreSQL</div>
+                                    <div>HTML5</div>
+                                    <div>CSS3</div>
+                                    <div class="paper-font-caption" secondary>SASS, LESS, Bootstrap</div>
+                                </paper-item-body>
+                            </paper-item>
+                        </paper-material>
+
+                    </section>
+
+                    <section data-route="education">
+                        <paper-material elevation="1">
+                            <h3 class="paper-font-display1 secondary">Education</h3>
+                            <paper-item>
+                                <paper-item-body>
+                                    <div class="paper-font-subhead">Electrical
+                                        Engineering, University of Alabama at
+                                        Birmingham.
+                                    </div>
+                                    <div secondary class="paper-font-caption">August 2009 - December 2010</div>
+                                </paper-item-body>
+                            </paper-item>
+                            <paper-divider></paper-divider>
+                            <h3 class="paper-font-display1 secondary">Certifications</h3>
+                            <paper-item>
+                                <paper-item-body>
+                                    <div class="paper-font-subhead">Microsoft Certified Professional</div>
+                                </paper-item-body>
+                            </paper-item>
+                            <paper-item>
+                                <paper-item-body>
+                                    <div class="paper-font-subhead">MongoDB for Developers</div>
+                                </paper-item-body>
+                            </paper-item>
+                        </paper-material>
+                    </section>
+
+                </iron-pages>
+            </paper-header-panel>
+        </paper-drawer-panel>
+    </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild-->
+</body>
+
+</html>

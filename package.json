@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "dependencies": {
     "restify": "~3.0.3",
-    "bower": "~1.4.1"
+    "bower": "~1.4.1",
+    "express": "~4.12.4"
   },
   "scripts": {
-    "start": "gulp serve",
+    "start": "node index",
     "postinstall": "./node_modules/bower/bin/bower install"
   },
   "devDependencies": {

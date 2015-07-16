@@ -73,7 +73,7 @@
             <paper-header-panel main mode="waterfall">
                 <paper-toolbar id="mainToolbar">
                     <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
-                    <div class="paper-font-display2">{{name}}</div>
+                    <div title>{{name}}</div>
                 </paper-toolbar>
 
                 <iron-pages attr-for-selected="data-route" selected="{{route}}">
@@ -111,48 +111,47 @@
 
                     <section data-route="about">
                         <paper-material elevation="1">
-                            <paper-item>
-                                <iron-icon icon="assignment-ind"></iron-icon>
-                                <paper-item-body>
-                                    <iron-icon icon="placeholder"></iron-icon>
+                            <paper-item class="layout horizontal">
+                                <iron-icon icon="assignment-ind" class="flex-1"></iron-icon>
+                                <div class="flex-auto"></div>
+                                <paper-item-body class="flex-10">
                                     <span>Front End Web Developer</span>
                                 </paper-item-body>
                             </paper-item>
                             <paper-divider></paper-divider>
-                            <paper-item>
-                                <iron-icon icon="mail"></iron-icon>
-                                <paper-item-body>
+                            <paper-item class="layout horizontal">
+                                <iron-icon icon="mail" class="flex-1"></iron-icon>
+                                <div class="flex-auto"></div>
+                                <paper-item-body class="flex-10">
                                     <div>
-                                        <iron-icon icon="placeholder"></iron-icon>
-                                        <a class="menu-link" href="mailto:roberto@thinkcrunch.com">roberto@thinkcrunch.com</a>
+                                        <a class="menu-link" href="mailto:roberto@thinkcrunch.com">roberto@thinkcrunch</a>
                                     </div>
                                     <div>
-                                        <iron-icon icon="placeholder"></iron-icon>
-                                        <a class="menu-link" href="mailto:rrodriguez@commandalkon.com">rrodriguez@commandalkon.com</a>
+                                        <a class="menu-link" href="mailto:rrodriguez@commandalkon.com">rrodriguez@commandalkon</a>
                                     </div>
                                 </paper-item-body>
                             </paper-item>
                             <paper-divider></paper-divider>
-                            <paper-item>
-                                <iron-icon icon="communication:phone"></iron-icon>
-                                <paper-item-body>
-                                    <iron-icon icon="placeholder"></iron-icon>
+                            <paper-item class="layout horizontal">
+                                <iron-icon icon="communication:phone" class="flex-1"></iron-icon>
+                                <div class="flex-auto"></div>
+                                <paper-item-body class="flex-10">
                                     <a class="menu-link" href="tel:2054478130">(205) 447-8130</a>
                                 </paper-item-body>
                             </paper-item>
                             <paper-divider></paper-divider>
-                            <paper-item>
-                                <iron-icon icon="language"></iron-icon>
-                                <paper-item-body>
-                                    <iron-icon icon="placeholder"></iron-icon>
+                            <paper-item class="layout horizontal">
+                                <iron-icon icon="language" class="flex-1"></iron-icon>
+                                <div class="flex-auto"></div>
+                                <paper-item-body class="flex-10">
                                     <a class="menu-link" href="//thinkcrunch.com">thinkcrunch.com</a>
                                 </paper-item-body>
                             </paper-item>
                             <paper-divider></paper-divider>
-                            <paper-item>
-                                <iron-icon icon="maps:pin-drop"></iron-icon>
-                                <paper-item-body>
-                                    <iron-icon icon="placeholder"></iron-icon>
+                            <paper-item class="layout horizontal">
+                                <iron-icon icon="maps:pin-drop" class="flex-1"></iron-icon>
+                                <div class="flex-auto"></div>
+                                <paper-item-body class="flex-10">
                                     <span>Birmingham, AL</span>
                                 </paper-item-body>
                             </paper-item>
